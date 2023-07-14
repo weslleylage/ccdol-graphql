@@ -9,11 +9,10 @@ const db = {
    host: process.env.DB_HOST,
    user: process.env.DB_USER,
    pass: process.env.DB_PASS,
-   name: process.env.DB_NAME,
-   domain: process.env.DB_DOMAIN
+   name: process.env.DB_NAME
 };
 
-const dbUri = `${db.host}${db.user}:${db.pass}@${db.domain}/${db.name}?retryWrites=true&w=majority`;
+const dbUri = `mongodb+srv://${db.user}:${db.pass}@${db.host}/${db.name}?retryWrites=true&w=majority`;
 
 const dbOptions = {
   useNewUrlParser: true,
