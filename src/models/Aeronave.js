@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const AeronaveSchema = mongoose.Schema({
-    id_ocorrencia_a: String,
+    id_ocorrencia_a: Number,
     matricula: String,
     operador_categoria: String,
     tipo_veiculo: String,
@@ -9,8 +9,8 @@ const AeronaveSchema = mongoose.Schema({
     modelo: String,
     motor_tipo: String,
     motor_quantidade: String,
-    assentos: String,
-    ano_fabricacao: String,
+    assentos: Number,
+    ano_fabricacao: Number,
     pais_fabricante: String,
     registro_segmento: String,
     voo_origem: String,
